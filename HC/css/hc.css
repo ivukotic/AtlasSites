@@ -1,0 +1,62 @@
+/*div {outline: 1px dashed red;}*/
+/*.zaglavlje {float: left; width: 100%;}*/
+body {
+    text-align: center;
+    background: #FFF; 
+    color: #000; 
+    font:90% arial,sans-serif;
+    background-image:url('../images/performance.jpg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+.styledTable {
+    width:100%;
+}
+
+.styledTable th{ 
+    font-size:1.1em;
+    background-color:green;
+    color:white;
+    height:40px;
+    text-align:center;
+}
+
+.styledTable td, .styledTable th{
+    padding:5px;
+}
+
+#leftcolumn {
+    text-align: left;
+    padding: 1%; 
+    float: left; 
+    width: 15%; 
+    } 
+#glavnacolumn {
+    text-align: left;
+    width: 80%;
+    padding: 1%;
+    float: left;
+    } 
+.footer {clear: both;}
+
+#accordion{
+    font-size: 0.7em;
+}
+
+#loading {
+	width: 200px;
+	height: 100px;
+	background-color: #FFFFFF;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -50px;
+	margin-left: -100px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #0000FF;
+	border: thick double #FF0000;
+}

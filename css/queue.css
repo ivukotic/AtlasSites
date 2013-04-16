@@ -1,0 +1,100 @@
+BODY {
+    text-align: center;
+    background: #FFF; 
+    color: #000; 
+    font:90% arial,sans-serif;
+/*    background-image:url('../images/performance.jpg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;*/
+}
+
+/*DIV {outline: 1px dashed red;}*/
+
+
+LI {list-style: circle inside; color:blue}
+
+
+IMG .ticket {
+    display: block;
+/*    margin-left: auto;
+    margin-right: auto */
+}
+IMG .schema{
+    display: block;
+    float: right;
+}
+
+DIV #steps{
+    font-size: 20px;
+}
+DIV .graystep {
+    width: 20%;
+    color: black;
+    float: left;
+}
+DIV .bluestep {
+    width: 20%;
+    color: blue;
+    float: left;
+}
+    
+.ui-dialog .ui-state-error { padding: .3em; }
+
+div.header {
+/*    width:80%; margin:0 auto; */
+    color: Blue;
+}
+
+
+#glavnacolumn {
+    text-align: left;
+/*    width: 80%;*/
+    width: 950px;
+    margin: 0 auto;
+}
+
+.schemacolumn {
+    padding:  2.0%; 
+    float: left; 
+    width: 50%; 
+}
+
+.column {
+/*    position: relative; */
+/*    margin: 1em 1%; */
+    padding: 0.5em 5.0%; 
+//    border: 1px solid #AAA; 
+//    border-width: 1px 1px 0 1px; 
+    float: left; 
+    width: 40%; 
+} 
+
+.footer {
+    text-align: center;
+    clear: both;
+}
+    
+#loading {
+    display: none;
+    width: 200px;
+    height: 100px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0000FF;
+    border: thick double #FF0000;
+}
+
+
+
+    
+
+
+

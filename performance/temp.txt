@@ -1,0 +1,50 @@
+ <%
+	var Name = Request.Form("query")(); 
+	if (!Name) {Response.Write("there is no query");}
+	if(Name == ""){Response.Write("query is empty");} 
+		else
+			{Response.Write(Name);} 
+	
+	if (False){
+		Response.Write("ALL OK CALLING SERVER.") 
+	
+		con= Server.CreateObject("ADODB.Connection");
+		con.ConnectionString = "Driver={Microsoft ODBC for Oracle};Server=INTR;Uid=ATLAS_ATHENAIOPERF;Pwd=Sophia2010;";
+		con.Open();
+		sql = "SELECT * FROM ATLAS_ATHENAIOPERF.USERS";
+		rs = con.Execute(sql);
+	
+		Response.ContentType = "text/html;charset=iso-8859-1";
+		Response.CharSet = "charset=iso-8859-1";
+		var found=false;
+		while (! rs.EOF) {
+			if (Name == rs("USERNAME")) 
+				found=true;
+			rs.MoveNext();
+		}
+		if (found==true){
+			Session("username")=Name;
+			//Response.Redirect("conjugator.asp");
+			Response.Write("ALL OK found.")
+			}
+		else
+			Response.Write("No such username. Please try again.")
+		con.Close();
+	}
+
+%>
+
+
+'con= Server.CreateObject("ADODB.Connection");
+'con.ConnectionString = "Driver={Microsoft ODBC for Oracle};Server=amicoll.in2p3.fr;Uid=ATLAS_AMI_COLL_SIZES_01_LAL;Pwd=mYLg5zm2IR;";
+'con.Open();
+'sql = "SELECT unique REPROTAG FROM ATLAS_AMI_COLL_SIZES_01.jobPerformance";
+'rs = con.Execute(sql);
+
+'Response.ContentType = "text/html;charset=iso-8859-1";
+'Response.CharSet = "charset=iso-8859-1";
+'while (! rs.EOF) {
+'	Response.Write(rs("REPROTAG")); 
+'	rs.MoveNext();
+'}
+'con.Close();
